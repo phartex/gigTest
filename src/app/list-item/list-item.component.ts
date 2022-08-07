@@ -18,7 +18,6 @@ export class ListItemComponent implements OnInit {
   ngOnInit(): void {}
 
   hoverEffect() {
-    // this.characterService.hoverFunction(this.alphaNumeric);
     this.startsWithVowel(this.alphaNumeric);
     this.secondFunction(this.alphaNumeric);
   }
@@ -40,11 +39,7 @@ export class ListItemComponent implements OnInit {
 
       // Target the first word
       Split_String[0] = Split_String[0].toUpperCase();
-
-      // Target the middle word
-      Split_String[Split_String.length / 2] =
-        // this.getMiddle(Split_String).toUpperCase();
-      this.characterService.getMiddle(Split_String).toUpperCase
+      
 
       // Target the last word
       Split_String[Split_String.length - 1] =
