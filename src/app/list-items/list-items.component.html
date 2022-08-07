@@ -1,0 +1,10 @@
+<h1 class="text-center">All text</h1>
+
+<ul>
+    <ng-container *ngFor="let text of allTexts; let i = index" >
+       <app-list-item [alphaNumeric]="text"></app-list-item>
+    </ng-container>
+</ul>
+ 
+
+
